@@ -10,12 +10,23 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
+    var data = [
+        ["Registro 1", "Registro 2", "Registro 3", "Registro 4", "Registro 5", "Registro 6", "Registro 7", "Registro 8", "Registro 9"]
+    ]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Neste ponto o root view controller da janela já foi carregado. Assim, pode-se injetar, inicialmente, os dados necessários
+        // nele.
+        let injector = Injector<Injectable, [[String]]>(callback: {(controller, data) in
+            controller.data = data
+        })
+        if let rootController = window?.rootViewController {
+            injector.inject(into: rootController, data: data)
+        }
+        
         return true
     }
 
@@ -40,7 +51,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

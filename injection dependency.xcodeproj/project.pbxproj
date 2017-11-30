@@ -14,6 +14,8 @@
 		74080BD21FCDF2A300411D13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74080BD01FCDF2A300411D13 /* LaunchScreen.storyboard */; };
 		74080BDD1FCDF2A300411D13 /* injection_dependencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74080BDC1FCDF2A300411D13 /* injection_dependencyTests.swift */; };
 		74080BE81FCDF2A300411D13 /* injection_dependencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74080BE71FCDF2A300411D13 /* injection_dependencyUITests.swift */; };
+		74080BF61FCDF63500411D13 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74080BF51FCDF63500411D13 /* Injectable.swift */; };
+		74080BF81FCE023100411D13 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74080BF71FCE023100411D13 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		74080BE31FCDF2A300411D13 /* injection dependencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "injection dependencyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74080BE71FCDF2A300411D13 /* injection_dependencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = injection_dependencyUITests.swift; sourceTree = "<group>"; };
 		74080BE91FCDF2A300411D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74080BF51FCDF63500411D13 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		74080BF71FCE023100411D13 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				74080BCE1FCDF2A300411D13 /* Assets.xcassets */,
 				74080BD01FCDF2A300411D13 /* LaunchScreen.storyboard */,
 				74080BD31FCDF2A300411D13 /* Info.plist */,
+				74080BF51FCDF63500411D13 /* Injectable.swift */,
+				74080BF71FCE023100411D13 /* TableViewController.swift */,
 			);
 			path = "injection dependency";
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				74080BCA1FCDF2A300411D13 /* ViewController.swift in Sources */,
+				74080BF61FCDF63500411D13 /* Injectable.swift in Sources */,
 				74080BC81FCDF2A300411D13 /* AppDelegate.swift in Sources */,
+				74080BF81FCE023100411D13 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
